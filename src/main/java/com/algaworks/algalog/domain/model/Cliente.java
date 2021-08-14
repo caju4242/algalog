@@ -24,12 +24,12 @@ public class Cliente {
 	private Long id;
 	
 	@NotBlank
-	@Size(max = 60)
+	@Size(min = 3, max = 60)
 	private String nome;
 	
 	@NotBlank
 	@Email
-	@Size(max = 255)
+	@Size(min = 5, max = 255)
 	private String email;
 	
 	@NotBlank
